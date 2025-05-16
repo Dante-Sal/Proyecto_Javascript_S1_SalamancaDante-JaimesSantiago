@@ -1,0 +1,59 @@
+@import url(../font.css);
+
+.login-container__form--radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.login-container__form--radio-container--input {
+  -webkit-appearance: none;
+  margin: .3vw;
+  width: 1.8vmax;
+  height: 1.8vmax;
+  border-radius: 100%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.125);
+  background-image: -webkit-radial-gradient( rgb(255, 255, 255) 0%, rgb(62, 140, 229) 15%, rgba(0, 119, 255, 0.3) 28%, rgba(0, 102, 153, 0) 70% );
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+    -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+  outline: none;
+}
+
+.login-container__form--radio-container--input:checked {
+  -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+    -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+}
+
+.login-container__form--radio-container--input:active {
+  -webkit-transform: scale(1.5);
+  -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+}
+
+.login-container__form--radio-container--input,
+.login-container__form--radio-container--input:active {
+  background-position: 4vw 0;
+}
+
+.login-container__form--radio-container--input:checked {
+  background-position: 0 0;
+}
+
+.login-container__form--radio-container--input:checked ~ .login-container__form--radio-container--input,
+.login-container__form--radio-container--input:checked ~ .login-container__form--radio-container--input:active {
+  background-position: -4vw 0;
+}
+
+#login-container__form--radio-container--input-USER {
+    margin-left: 1.3vw;
+}
+
+.login-container__form--radio-container--label {
+    color: rgb(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 1.5vw;
+    user-select: none;
+}

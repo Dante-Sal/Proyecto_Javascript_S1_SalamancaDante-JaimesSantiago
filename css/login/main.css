@@ -1,0 +1,45 @@
+@import url(../font.css);
+
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.login-container {
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    bottom: 15%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 4vmax;
+}
+
+.login-container__title {
+    color: #FFF;
+    font-family: 'Iceberg';
+    font-size: 6vw;
+    letter-spacing: .5vw;
+    user-select: none;
+}
+
+.login-container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
