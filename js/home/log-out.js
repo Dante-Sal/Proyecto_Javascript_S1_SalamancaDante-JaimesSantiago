@@ -1,4 +1,4 @@
-document.querySelector('.btn-class-name')
-    .addEventListener('click', e => {
-        location.href = '../index.html'
+document.querySelector('.log-out-section__btn')
+    .addEventListener('click', () => {
+        location.href = '../index.html';
     });

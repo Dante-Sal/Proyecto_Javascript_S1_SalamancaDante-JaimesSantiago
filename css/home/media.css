@@ -1,0 +1,32 @@
+@media (max-width: 1100px) and (min-width: 801px) {
+    .section__team-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section__team-cards--card {
+        width: 13.6vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        height: 70vh;
+    }
+
+    .section__team-cards--card {
+        width: 18.4vw;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0 0.8vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 2.5vw;
+    }
+}
