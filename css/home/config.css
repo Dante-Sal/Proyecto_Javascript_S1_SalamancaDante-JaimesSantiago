@@ -1,0 +1,41 @@
+@import url(../font.css);
+
+@keyframes rot {
+    from {
+        transform: rotate(-100deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.sidebar__config {
+    margin-top: 12vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar__config-btn {
+    display: block;
+    transition: transform 0.4s ease-in;
+}
+
+.sidebar__config-btn:hover {
+    transform: rotate(60deg);
+}
+
+.sidebar__config-btn:active {
+    animation: rot 1s linear infinite;
+}
+
+.sidebar__config-label {
+    margin-top: 0.5vw;
+    color: rgb(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 2vw;
+    line-height: 2vw;
+    overflow: visible;
+    user-select: none;
+}
