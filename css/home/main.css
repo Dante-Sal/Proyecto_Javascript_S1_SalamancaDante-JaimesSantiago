@@ -14,6 +14,14 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../storage/img/home_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 ::-webkit-scrollbar {
     width: 0.8vw;
     background-color: rgba(0, 0, 0, 0);
@@ -24,14 +32,12 @@ html {
     border-radius: 3vw;
 }
 
-.bg-img {
+.bg-filter {
     position: absolute;
-    margin: -1vw 0 0 -1vw;
-    width: 110vw;
-    height: 110vh;
-    filter: blur(8px);
-    object-fit: cover;
-    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(8px);
 }
 
 .sidebar {
