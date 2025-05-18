@@ -40,6 +40,7 @@ html {
     width: 8.5vw;
     height: 4.5vw;
     object-fit: cover;
+    user-select: none;
 }
 
 .section {
@@ -59,4 +60,11 @@ html {
     font-family: 'Iceberg';
     font-size: 7vw;
     letter-spacing: 0.5vw;
+    user-select: none;
+}
+
+.section__team-cards {
+    margin-top: 1vmax;
+    height: 55.83vh;
+    overflow-y: auto;
 }

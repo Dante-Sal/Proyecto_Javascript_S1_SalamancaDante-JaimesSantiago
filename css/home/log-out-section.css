@@ -1,0 +1,67 @@
+@import url(../font.css);
+
+.log-out-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, .4);
+    border-bottom-left-radius: 50px;
+}
+
+.btn-class-name {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    background-color: #A70300;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: .3s;
+    overflow: visible;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-class-name .back {
+    background: #A70300;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-class-name .front {
+    background: #EE2A26;
+    border: 1px solid #A70300;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-15%);
+    transition: .15s;
+}
+
+.btn-class-name .front img {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.btn-class-name:active .front {
+    transform: translateY(0%);
+}
+
+.log-out-section__label {
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 18px;
+}
