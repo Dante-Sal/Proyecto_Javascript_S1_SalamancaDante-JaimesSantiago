@@ -96,7 +96,7 @@
 @media (max-width: 502px) {
     .section__team-cards {
         grid-template-columns: repeat(1, 1fr);
-        height: 80vh;
+        height: 69vh;
     }
 
     .section__team-cards--card {
@@ -115,6 +115,15 @@
 }
 
 @media (max-width: 496px) and (orientation: portrait) {
+    .section__team-cards--card-footer {
+        padding: 0 10vw;
+        height: 18vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 5.5vw;
+    }
+
     .log-out-section {
         width: 100px;
         height: 100px;

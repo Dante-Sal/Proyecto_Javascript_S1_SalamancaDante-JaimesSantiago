@@ -3,13 +3,13 @@
 .section__circuits-button {
     cursor: pointer;
     position: relative;
-    margin: 2vmax 0;
-    padding: .8vw 2.5vw;
+    margin: clamp(2vmax, calc((60px - 3vmax) * 1.25), calc((60px - 3vmax) * 1.25)) 0;
+    padding: clamp(.8vmax, calc((60px - 3vmax) * .5), calc((60px - 3vmax) * .5)) clamp(2.5vmax, calc((60px - 3vmax) * 1.563), calc((60px - 3vmax) * 1.563));
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: .2vw solid rgb(255, 255, 255);
-    border-radius: 3.4vw;
-    font-size: 1.6vw;
+    border-radius: clamp(3.4vmax, calc((60px - 3vmax) * 2.125), calc((60px - 3vmax) * 2.125));
+    font-size: clamp(1.6vmax, calc(60px - 3vmax), calc(60px - 3vmax));
     font-family: 'Iceberg';
     transition: all .3s cubic-bezier(.23, 1, .320, 1);
     overflow: hidden;
@@ -21,8 +21,8 @@
     position: absolute;
     inset: 0;
     margin: auto;
-    width: 4vw;
-    height: 4vw;
+    width: clamp(4vmax, calc((60px - 3vmax) * 2.5), calc((60px - 3vmax) * 2.5));
+    height: clamp(4vmax, calc((60px - 3vmax) * 2.5), calc((60px - 3vmax) * 2.5));
     border-radius: inherit;
     scale: 0;
     z-index: -1;
