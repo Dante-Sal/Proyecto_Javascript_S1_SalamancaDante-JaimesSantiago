@@ -1,33 +1,162 @@
-@media (max-width: 1218px) and ((min-width: 644px)) and (orientation: portrait) {
+@media (min-width: 2492px) {
     .section__team-cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: stretch;
-        width: 75vw;
-        height: 80vh;
+        width: 56.9vw;
+        height: 90vh;
     }
 
     .section__team-cards--card {
-        width: 24.1vw;
+        width: 13.5vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 2492px) and (min-width: 1505px) and (orientation: landscape) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        width: 50vw;
+        height: 90vh;
+    }
+
+    .section__team-cards--card {
+        width: 15.6vw;
+        height: 30vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0.3vw 2.8vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 2492px) and (min-width: 2430px) and (orientation: portrait) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        width: 50vw;
+        height: 90vh;
+    }
+
+    .section__team-cards--card {
+        width: 15.6vw;
         height: auto;
     }
 
     .section__team-cards--card-footer {
-        padding: 1.5vw;
-        height: 8vw;
-    }
-
-    .section__team-cards--card-footer span {
-        font-size: 3vw;
+        padding: 0.3vw 2vw;
+        height: 5vh;
     }
 }
 
-@media (max-width: 1100px) and (min-width: 801px) and (orientation: landscape) {
+@media (max-width: 2429px) and (min-width: 1505px) and (orientation: landscape) {
     .section__team-cards {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        width: 50vw;
+        height: 90vh;
     }
 
     .section__team-cards--card {
-        width: 13.6vw;
+        width: 15.6vw;
+        height: 30vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0.3vw 2.8vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 2429px) and (min-width: 1505px) and (orientation: portrait) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        width: 50vw;
+        height: 90vh;
+    }
+
+    .section__team-cards--card {
+        width: 15.6vw;
+        height: auto;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0.3vw 2.8vw;
+        height: 5vh;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 1504px) and (min-width: 1101px) and (orientation: landscape) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        width: 70vw;
+        height: 80vh;
+    }
+
+    .section__team-cards--card {
+        width: 22.25vw;
+        height: 20vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0.3vw 4.6vw;
+        height: 8.5vh;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1504px) and (min-width: 1101px) and (orientation: portrait) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        width: 70vw;
+        height: 80vh;
+    }
+
+    .section__team-cards--card {
+        width: 22.25vw;
+        height: 23vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0.3vw 4.6vw;
+        height: 8.5vh;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 926px) and (orientation: landscape) {
+    .section__team-cards {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: stretch;
+        width: 80vw;
+        height: 65vh;
+    }
+
+    .section__team-cards--card {
+        width: 19.01vw;
+        height: auto;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0 4vw;
+        height: 5.5vh;
     }
 
     .section__team-cards--card-footer span {
@@ -35,18 +164,22 @@
     }
 }
 
-@media (max-width: 800px) and (min-width: 644px) and (orientation: landscape) {
+@media (max-width: 1100px) and (min-width: 926px) and (orientation: portrait) {
     .section__team-cards {
         grid-template-columns: repeat(3, 1fr);
-        height: 70vh;
+        align-items: stretch;
+        width: 80vw;
+        height: 80vh;
     }
 
     .section__team-cards--card {
-        width: 18.4vw;
+        width: 25.5vw;
+        height: auto;
     }
 
     .section__team-cards--card-footer {
-        padding: 0 0.8vw;
+        padding: 1.5vh 4vw;
+        height: 5.5vh;
     }
 
     .section__team-cards--card-footer span {
@@ -54,14 +187,34 @@
     }
 }
 
-@media (max-width: 643px) and (min-width: 503px) and (orientation: landscape) {
+@media (max-width: 925px) and (min-width: 764px) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        height: 70vh;
+    }
+
+    .section__team-cards--card {
+        width: 18.35vw;
+        height: 20vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 2.6vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 763px) and (min-width: 503px) and (orientation: portrait) {
     .section__team-cards {
         grid-template-columns: repeat(2, 1fr);
         height: 70vh;
     }
 
     .section__team-cards--card {
-        width: 28vw;
+        width: 27.6vw;
     }
 
     .section__team-cards--card-footer {
@@ -73,27 +226,7 @@
     }
 }
 
-@media (max-width: 643px) and (min-width: 503px) and (orientation: portrait) {
-    .section__team-cards {
-        grid-template-columns: repeat(2, 1fr);
-        height: 70vh;
-    }
-
-    .section__team-cards--card {
-        width: 28vw;
-        height: 30vh;
-    }
-
-    .section__team-cards--card-footer {
-        padding: 0 0.6vw;
-    }
-
-    .section__team-cards--card-footer span {
-        font-size: 4vw;
-    }
-}
-
-@media (max-width: 502px) {
+@media (max-width: 502px) and (orientation: portrait) {
     .section__team-cards {
         grid-template-columns: repeat(1, 1fr);
         height: 69vh;
