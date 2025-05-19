@@ -19,6 +19,8 @@
 
 .sidebar__config-btn {
     display: block;
+    width: 4vw;
+    height: 4vw;
     transition: transform 0.4s ease-in;
 }
 
