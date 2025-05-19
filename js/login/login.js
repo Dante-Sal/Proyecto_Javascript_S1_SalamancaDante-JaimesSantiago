@@ -1,6 +1,6 @@
-const login_form = document.querySelector('.login-container__form');
+// const login_form = document.querySelector('.login-container__form');
 
-login_form.addEventListener('submit', e => {
-    e.preventDefault();
-    location.href = 'Proyecto_Javascript_S1_SalamancaDante-JaimesSantiago/pages/home.html';
-});
+// login_form.addEventListener('submit', e => {
+//     e.preventDefault();
+//     location.href = 'Proyecto_Javascript_S1_SalamancaDante-JaimesSantiago/pages/home.html';
+// });

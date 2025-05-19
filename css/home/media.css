@@ -1,4 +1,27 @@
-@media (max-width: 1100px) and (min-width: 801px) {
+@media (max-width: 1218px) and ((min-width: 644px)) and (orientation: portrait) {
+    .section__team-cards {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        width: 75vw;
+        height: 80vh;
+    }
+
+    .section__team-cards--card {
+        width: 24.1vw;
+        height: auto;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 1.5vw;
+        height: 8vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 801px) and (orientation: landscape) {
     .section__team-cards {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -12,7 +35,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 644px) and (orientation: landscape) {
     .section__team-cards {
         grid-template-columns: repeat(3, 1fr);
         height: 70vh;
@@ -28,5 +51,92 @@
 
     .section__team-cards--card-footer span {
         font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 643px) and (min-width: 503px) and (orientation: landscape) {
+    .section__team-cards {
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+    }
+
+    .section__team-cards--card {
+        width: 28vw;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0 1vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 643px) and (min-width: 503px) and (orientation: portrait) {
+    .section__team-cards {
+        grid-template-columns: repeat(2, 1fr);
+        height: 70vh;
+    }
+
+    .section__team-cards--card {
+        width: 28vw;
+        height: 30vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0 0.6vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 502px) {
+    .section__team-cards {
+        grid-template-columns: repeat(1, 1fr);
+        height: 80vh;
+    }
+
+    .section__team-cards--card {
+        width: 100%;
+        height: 33.8vh;
+    }
+
+    .section__team-cards--card-footer {
+        padding: 0 6vw;
+        height: 12vw;
+    }
+
+    .section__team-cards--card-footer span {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 496px) and (orientation: portrait) {
+    .log-out-section {
+        width: 100px;
+        height: 100px;
+        border-bottom-left-radius: 38.46px;
+    }
+
+    .log-out-section__btn {
+        width: 46.15px;
+        height: 38.46px;
+    }
+
+    .log-out-section__btn .log-out-section__btn--front {
+        border-width: 0.769px;
+    }
+
+    .log-out-section__btn .log-out-section__btn--front img {
+        width: 192.3px;
+        height: 92.3px;
+    }
+
+    .log-out-section__label {
+        margin-top: 3.846px;
+        font-size: 13.846px;
     }
 }

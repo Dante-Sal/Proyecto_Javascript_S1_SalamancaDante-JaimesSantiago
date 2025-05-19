@@ -4,7 +4,7 @@
     display: grid;
     flex-direction: column;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.83vw;
+    gap: 0.83vmax;
     justify-content: space-between;
     width: 58.3vw;
 }
@@ -14,7 +14,7 @@
     height: calc(228px - 5vw);
     min-height: 11.104vw;
     position: relative;
-    border-radius: 1.667vw;
+    border-radius: 2vmax;
     overflow: hidden;
     color: #000;
     transform: translateZ(0);
