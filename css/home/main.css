@@ -57,6 +57,7 @@ body {
     height: 4.5vw;
     object-fit: cover;
     user-select: none;
+    cursor: pointer;
 }
 
 .section {
