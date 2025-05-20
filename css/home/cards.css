@@ -7,6 +7,7 @@
     gap: 0.83vmax;
     justify-content: space-between;
     width: 58.3vw;
+    cursor: pointer;
 }
 
 .section__team-cards--card {

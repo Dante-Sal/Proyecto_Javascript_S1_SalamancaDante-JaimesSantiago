@@ -1,4 +1,6 @@
 const body = document.querySelector('body');
+const drivers_selector_img = document.querySelector('.section__drivers-selector--img');
+const vehicles_selector_img = document.querySelector('.section__vehicles-selector--img');
 
 async function FETCH_INFO() {
     const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api');
@@ -20,6 +22,8 @@ function DISPLAY_TEAM_MENU(data) {
     body.style.backgroundPosition = '50%';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundSize = 'cover';
+    drivers_selector_img.src = data.resources.drivers;
+    vehicles_selector_img.src = data.resources.vehicles;
 };
 
 FETCH_INFO()
