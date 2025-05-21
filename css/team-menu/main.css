@@ -1,3 +1,5 @@
+@import url(../font.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -59,12 +61,40 @@ body {
     background-color: rgba(0, 0, 0, .4);
 }
 
-.section__drivers-selector--img {
-    width: 23vw;
-    height: auto;
+.section__selector-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.section__vehicles-selector--img {
-    width: 28vw;
-    height: auto;
+.section__drivers-selector-container {
+    height: 27.485vw;
+}
+
+.section__drivers-selector-img {
+    position: absolute;
+    height: 19.235vw;
+}
+
+.section__selector-title {
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 8.5vw;
+    letter-spacing: -1vw;
+}
+
+.section__vehicles-selector-container {
+    margin-top: 3.285vw;
+    height: 24.2vw;
+}
+
+.section__vehicles-selector-img {
+    position: absolute;
+    bottom: 4.2vw;
+    z-index: 1000;
+    height: 15.7471vw;
 }

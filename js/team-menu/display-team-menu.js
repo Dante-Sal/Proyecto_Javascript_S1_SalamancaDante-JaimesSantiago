@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
-const drivers_selector_img = document.querySelector('.section__drivers-selector--img');
-const vehicles_selector_img = document.querySelector('.section__vehicles-selector--img');
+const drivers_selector_img = document.querySelector('.section__drivers-selector-img');
+const vehicles_selector_img = document.querySelector('.section__vehicles-selector-img');
 
 async function FETCH_INFO() {
     const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api');
