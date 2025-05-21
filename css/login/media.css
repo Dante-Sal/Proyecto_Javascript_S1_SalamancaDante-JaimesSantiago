@@ -1,0 +1,9 @@
+@media (orientation: portrait) {
+    .login-container {
+        top: 35%;
+        right: 25%;
+        bottom: 35%;
+        left: 25%;
+        height: 30%;
+    }
+}

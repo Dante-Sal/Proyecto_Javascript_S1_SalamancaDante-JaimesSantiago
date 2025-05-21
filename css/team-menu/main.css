@@ -75,16 +75,7 @@ body {
 
 .section__drivers-selector-img {
     position: absolute;
-    height: 19.235vw;
-}
-
-.section__selector-title {
-    position: absolute;
-    bottom: 0;
-    color: rgb(255, 255, 255);
-    font-family: 'Iceberg';
-    font-size: 8.5vw;
-    letter-spacing: -1vw;
+    height: 19.18vw;
 }
 
 .section__vehicles-selector-container {
@@ -97,4 +88,13 @@ body {
     bottom: 4.2vw;
     z-index: 1000;
     height: 15.7471vw;
+}
+
+.section__selector-title {
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 8.5vw;
+    letter-spacing: -1vw;
 }
