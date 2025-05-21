@@ -25,9 +25,15 @@ function DISPLAY_TEAM_MENU(team_data) {
         .then(data => {
             for (let i = 0; i < data.drivers.length; i++) {
                 if (data.drivers[i].team === team_data.name) {
-                    drivers_container_img.insertAdjacentHTML('beforeend', `
+                    drivers_container_img.innerHTML = `
                         <img class="section__driver-container-img" src="${data.drivers[i].image}"/>
-                        `);
+                        <div class="section__driver-container-header">
+                            <p class="section__driver-container-number section__driver-container-text">${data.drivers[i].driver_number}</p>
+                        </div>
+                        <p class="section__driver-container-name section__driver-container-text">${data.drivers[i].name}</p>
+                        <p class="section__driver-container-team section__driver-container-text">${data.drivers[i].team}</p>
+                        `;
+                    break;
                 };
             };
         });
