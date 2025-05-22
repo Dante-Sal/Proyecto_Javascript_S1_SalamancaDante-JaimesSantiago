@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
-const drivers_container_img = document.querySelector('.section__driver-container');
+const drivers_container_img = document.querySelector('.section__driver-container'); 7
+const section_drivers_container_menu = document.querySelector('.section__drivers-container-menu');
 
 async function FETCH_INFO() {
     const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api');
@@ -24,16 +25,26 @@ function DISPLAY_TEAM_MENU(team_data) {
     FETCH_INFO()
         .then(data => {
             for (let i = 0; i < data.drivers.length; i++) {
-                if (data.drivers[i].team === team_data.name) {
+                if (data.drivers[i].team === team_data.name && data.drivers[i].role === 'Leader') {
                     drivers_container_img.innerHTML = `
                         <img class="section__driver-container-img" src="${data.drivers[i].image}"/>
                         <div class="section__driver-container-header">
                             <p class="section__driver-container-number section__driver-container-text">${data.drivers[i].driver_number}</p>
+                            <img class="section__driver-container-team-img" src="${team_data.resources.no_background_logo}"/>
                         </div>
                         <p class="section__driver-container-name section__driver-container-text">${data.drivers[i].name}</p>
                         <p class="section__driver-container-team section__driver-container-text">${data.drivers[i].team}</p>
                         `;
                     break;
+                };
+            };
+            for (let i = 0; i < data.drivers.length; i++) {
+                if (data.drivers[i].team === team_data.name) {
+                    section_drivers_container_menu.insertAdjacentHTML('beforeend', `
+                        <div class="section__drivers-container-menu--driver">
+                            <img class="section__drivers-container-menu--driver-img" src="${data.drivers[i].image}"/>
+                            <p class="section__drivers-container-menu--driver-name">${data.drivers[i].name}</p>
+                        </div>                        `);
                 };
             };
         });

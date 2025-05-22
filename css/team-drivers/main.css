@@ -3,13 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .bg-filter {
@@ -45,7 +45,7 @@ body {
 
 .section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -63,7 +63,9 @@ body {
 
 .section__driver-container-img {
     width: 85%;
+    aspect-ratio: 1 / 1;
     border-radius: 1vw;
+    user-select: none;
 }
 
 .section__driver-container-text {
@@ -72,10 +74,81 @@ body {
     letter-spacing: 0.2vw;
 }
 
+.section__driver-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.section__driver-container-team-img {
+    width: 6vw;
+    height: 6vw;
+    object-fit: contain;
+    user-select: none;
+}
+
 .section__driver-container-number {
     font-size: 5vw;
+    user-select: none;
 }
 
 .section__driver-container-name {
     font-size: 3vw;
+}
+
+.section__driver-container-team {
+    font-size: 1.5vw;
+}
+
+.section__drivers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    width: 45vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section__drivers-container-menu {
+    display: flex;
+    padding: 4vh 0;
+    width: 45vw;
+    height: 80vh;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.section__drivers-container-menu--driver {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3vw;
+    width: 18vw;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+.section__drivers-container-menu--driver:hover {
+    transform: scale(1.1);
+}
+
+.section__drivers-container-menu--driver-img {
+    width: 16.2vw;
+    height: 60vh;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.section__drivers-container-menu--driver-name {
+    margin-top: 1vw;
+    color: rgba(255, 255, 255);
+    font-family: 'Iceberg';
+    font-size: 1.9vw;
+    text-align: center;
+    letter-spacing: 0.2vw;
 }

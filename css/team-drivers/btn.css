@@ -1,26 +1,26 @@
 @import url(../font.css);
 
-.section__selector-button {
+.section__drivers-container-button {
     cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.1vmax 0;
-    padding: .4vmax;
-    width: 13vmax;
+    margin: 2vw 0 1.5vw;
+    padding: .8vmax;
+    width: 14vmax;
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: .2vw solid rgb(255, 255, 255);
     border-radius: 3.4vmax;
-    font-size: 2.5vmax;
+    font-size: 2vmax;
     font-family: 'Iceberg';
     transition: all .3s cubic-bezier(.23, 1, .320, 1);
     overflow: hidden;
     user-select: none;
 }
 
-.section__selector-button::before {
+.section__drivers-container-button::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -34,16 +34,16 @@
     transition: all .6s cubic-bezier(.23, 1, .320, 1);
 }
 
-.section__selector-button:hover::before {
+.section__drivers-container-button:hover::before {
     scale: 3;
 }
 
-.section__selector-button:hover {
+.section__drivers-container-button:hover {
     color: rgb(255, 255, 255);
     scale: 1.1;
     box-shadow: 0 0 2vw rgba(255, 255, 255, .4);
 }
 
-.section__selector-button:active {
+.section__drivers-container-button:active {
     scale: 1;
 }
