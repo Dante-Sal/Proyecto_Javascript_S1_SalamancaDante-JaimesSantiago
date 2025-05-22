@@ -791,7 +791,7 @@
     "vehicles": [
       {
         "team": "McLaren Racing Limited",
-        "model": "MCL38",
+        "model": "MCL39",
         "engine": "Mercedes",
         "max_speed_kmh": 350,
         "acceleration_0_100": 2.6,
@@ -840,11 +840,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Lando_Norris_2022_British_Grand_Prix.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mclaren.png"
       },
       {
         "team": "Scuderia Ferrari HP",
-        "model": "SF-24",
+        "model": "SF-25",
         "engine": "Ferrari",
         "max_speed_kmh": 355,
         "acceleration_0_100": 2.5,
@@ -893,11 +893,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Charles_Leclerc_2019_Singapore.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/ferrari.png"
       },
       {
         "team": "Red Bull Racing",
-        "model": "RB20",
+        "model": "RB21",
         "engine": "Honda",
         "max_speed_kmh": 360,
         "acceleration_0_100": 2.5,
@@ -946,11 +946,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Max_Verstappen_2023_Austria_FP2_%28cropped%29.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/red-bull-racing.png"
       },
       {
         "team": "Mercedes-AMG Petronas",
-        "model": "W15",
+        "model": "W16",
         "engine": "Mercedes",
         "max_speed_kmh": 355,
         "acceleration_0_100": 2.6,
@@ -999,11 +999,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Lewis_Hamilton_2022_Imola.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mercedes.png"
       },
       {
         "team": "Aston Martin Aramco",
-        "model": "AMR24",
+        "model": "AMR25",
         "engine": "Mercedes",
         "max_speed_kmh": 348,
         "acceleration_0_100": 2.7,
@@ -1052,11 +1052,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Fernando_Alonso_2023.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/aston-martin.png"
       },
       {
         "team": "BWT Alpine",
-        "model": "A524",
+        "model": "A525",
         "engine": "Renault",
         "max_speed_kmh": 345,
         "acceleration_0_100": 2.8,
@@ -1105,11 +1105,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Esteban_Ocon_2023_Silverstone.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/alpine.png"
       },
       {
         "team": "MoneyGram Haas",
-        "model": "VF-24",
+        "model": "VF-25",
         "engine": "Ferrari",
         "max_speed_kmh": 342,
         "acceleration_0_100": 2.9,
@@ -1158,11 +1158,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Kevin_Magnussen_2022_Austria.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/haas.png"
       },
       {
         "team": "Visa Cash App Racing Bulls",
-        "model": "VCARB 01",
+        "model": "VCARB 02",
         "engine": "Honda",
         "max_speed_kmh": 343,
         "acceleration_0_100": 2.7,
@@ -1211,11 +1211,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Daniel_Ricciardo_2023.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/racing-bulls.png"
       },
       {
         "team": "Atlassian Williams Racing",
-        "model": "FW46",
+        "model": "FW47",
         "engine": "Mercedes",
         "max_speed_kmh": 344,
         "acceleration_0_100": 2.8,
@@ -1264,11 +1264,11 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Alex_Albon_2022_Singapore.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/williams.png"
       },
       {
         "team": "Stake Kick Sauber",
-        "model": "C44",
+        "model": "C45",
         "engine": "Ferrari",
         "max_speed_kmh": 346,
         "acceleration_0_100": 2.7,
@@ -1317,10 +1317,10 @@
             }
           }
         },
-        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Valtteri_Bottas_2023.jpg"
+        "image": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/kick-sauber.png"
       }
     ],
-    "selected_team": "2",
+    "selected_team": "0",
     "id": "1"
   }
 ]

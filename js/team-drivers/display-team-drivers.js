@@ -1,21 +1,20 @@
 const body = document.querySelector('body');
-const drivers_container_img = document.querySelector('.section__driver-container');
-const select_btn = document.querySelector('.section__drivers-container-button');
+const section_selected_driver_container = document.querySelector('.section__driver-container');
 const section_drivers_container_menu = document.querySelector('.section__drivers-container-menu');
 
 async function FETCH_INFO() {
-    const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api');
-    const data = response.data[0];
+    const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api/1');
+    const data = response.data;
     return data;
 };
 
 async function FETCH_TEAM(id) {
-    const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api');
-    const data = response.data[0].teams[id];
+    const response = await axios.get('https://68288b9d6075e87073a41cba.mockapi.io/f1_api/1');
+    const data = response.data.teams[id];
     return data;
 };
 
-function DISPLAY_TEAM_MENU(team_data) {
+function DISPLAY_INFO(team_data) {
     document.title = `F1 // TEAM (${team_data.name}) // DRIVERS`
     body.style.width = '100vw';
     body.style.height = '100vh';
@@ -27,7 +26,7 @@ function DISPLAY_TEAM_MENU(team_data) {
         .then(data => {
             for (let i = 0; i < data.drivers.length; i++) {
                 if (data.drivers[i].team === team_data.name && data.drivers[i].role === 'Leader') {
-                    drivers_container_img.innerHTML = `
+                    section_selected_driver_container.innerHTML = `
                         <img class="section__driver-container-img" src="${data.drivers[i].image}"/>
                         <div class="section__driver-container-header">
                             <p class="section__driver-container-number section__driver-container-text">${data.drivers[i].driver_number}</p>
@@ -75,7 +74,7 @@ async function SELECT_DRIVER(driver_number) {
                 .then(team_data => {
                     for (let i = 0; i < data.drivers.length; i++) {
                         if (data.drivers[i].driver_number === parseInt(driver_number)) {
-                            drivers_container_img.innerHTML = `
+                            section_selected_driver_container.innerHTML = `
                                     <img class="section__driver-container-img" src="${data.drivers[i].image}"/>
                                     <div class="section__driver-container-header">
                                         <p class="section__driver-container-number section__driver-container-text">${data.drivers[i].driver_number}</p>
@@ -95,6 +94,6 @@ FETCH_INFO()
     .then(data => {
         FETCH_TEAM(data.selected_team)
             .then(team_data => {
-                DISPLAY_TEAM_MENU(team_data);
+                DISPLAY_INFO(team_data);
             });
     });
