@@ -5,10 +5,10 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 1.1vmax 0;
-    padding: .4vmax;
     width: 13vmax;
+    height: 4vmax;
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: .2vw solid rgb(255, 255, 255);
