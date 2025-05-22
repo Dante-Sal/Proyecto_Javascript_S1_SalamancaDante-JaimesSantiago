@@ -85,21 +85,20 @@ body {
     height: 10vw;
     object-fit: contain;
     user-select: none;
-    filter: drop-shadow(0 0 2vw rgb(255, 255, 255));
+    filter: drop-shadow(0 0 1vw rgb(255, 255, 255, .4));
 }
 
 .section__vehicle-container-model {
     font-size: 5vw;
-    user-select: none;
 }
 
 .section__vehicle-container-engine, .section__vehicle-container-max-speed, .section__vehicle-container-acceleration-0-100 {
-    margin-top: 2.5vw;
+    margin-top: 0.6vw;
     font-size: 2vw;
 }
 
 .section__vehicle-container-engine span, .section__vehicle-container-max-speed span, .section__vehicle-container-acceleration-0-100 span {
-    opacity: 50%;
+    color: rgba(255, 255, 255, .5);
 }
 
 .section__vehicle-container-team {

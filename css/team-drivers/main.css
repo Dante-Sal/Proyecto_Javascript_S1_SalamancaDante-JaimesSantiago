@@ -12,6 +12,16 @@ body {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    height: 0.8vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 3vw;
+}
+
 .bg-filter {
     position: absolute;
     width: 100vw;
