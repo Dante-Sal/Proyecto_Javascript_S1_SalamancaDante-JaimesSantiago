@@ -105,6 +105,7 @@ body {
     height: 15vw;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+    user-select: none;
 }
 
 .section__circuit-cards--circuit-info {
@@ -148,7 +149,7 @@ body {
     width: 55vw;
 }
 
-.section__circuit-cards--circuit-name {
+.section__circuit-cards--circuit-title {
     display: block !important;
     font-size: 4vw;
 }
@@ -165,4 +166,20 @@ body {
     white-space: wrap;
     overflow: auto;
     text-overflow: clip;
+}
+
+.section__circuit-cards--circuit-winners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__circuit-cards--circuit-subtitle {
+    font-size: 3.5vw;
+}
+
+.section__circuit-cards--circuit-button-back {
+    margin: 3vw;
+    transform: scale(1.3);
 }

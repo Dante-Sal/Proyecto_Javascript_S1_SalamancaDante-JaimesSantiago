@@ -33,7 +33,7 @@ function DISPLAY_SELECTED_CIRCUIT(event) {
         .then(data => {
             section_circuit_cards.innerHTML = `
                 <div class="section__circuit-cards--circuit section__circuit-cards--circuit-selected">
-                    <p class="section__circuit-cards--circuit-text section__circuit-cards--circuit-name">${data.circuits[id].name}</p>
+                    <p class="section__circuit-cards--circuit-text section__circuit-cards--circuit-title">${data.circuits[id].name}</p>
                     <img class="section__circuit-cards--circuit-img section__circuit-cards--circuit-selected-img" src="${data.circuits[id].image}"/>
                     <p class="section__circuit-cards--circuit-text"><span>Country:</span>${data.circuits[id].country}</p>
                     <p class="section__circuit-cards--circuit-text"><span>Length:</span>${data.circuits[id].length_km} km</p>
@@ -42,11 +42,20 @@ function DISPLAY_SELECTED_CIRCUIT(event) {
                     <p class="section__circuit-cards--circuit-text"><span>Lap record time:</span>${data.circuits[id].lap_record.time}</p>
                     <p class="section__circuit-cards--circuit-text"><span>Lap record driver:</span>${data.circuits[id].lap_record.driver}</p>
                     <p class="section__circuit-cards--circuit-text"><span>Lap record year:</span>${data.circuits[id].lap_record.year}</p>
-                    <div>
-                        
+                    <div class="section__circuit-cards--circuit-winners">
+                        <p class="section__circuit-cards--circuit-text section__circuit-cards--circuit-title section__circuit-cards--circuit-subtitle">Winners</p>
                     </div>
+                    <button class="section__circuit-cards--circuit-button section__circuit-cards--circuit-button-back" onclick="location.reload()">
+                        BACK ↩
+                    </button>
                 </div>
                 `;
+            const circuit_winners = document.querySelector('.section__circuit-cards--circuit-winners');
+            for (let i = 0; i < data.circuits[id].winners.length; i++) {
+                circuit_winners.insertAdjacentHTML('beforeend', `
+                    <p class="section__circuit-cards--circuit-text">${data.circuits[id].winners[i].driver}<span>(${data.circuits[id].winners[i].season})</span></p>
+                    `);
+            };
         });
 }
 
