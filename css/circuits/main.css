@@ -117,7 +117,7 @@ body {
     overflow: visible;
 }
 
-.section__circuit-cards--circuit-name {
+.section__circuit-cards--circuit-text {
     width: 20vw;
     color: rgb(255, 255, 255);
     font-family: 'Iceberg';
@@ -126,4 +126,43 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.section__circuit-cards--circuit-selected {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5vw 0;
+    width: 60vw;
+    height: auto;
+}
+
+.section__circuit-cards--circuit-selected-img {
+    width: 60%;
+    height: 40%;
+}
+
+.section__circuit-cards--circuit-selected .section__circuit-cards--circuit-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55vw;
+}
+
+.section__circuit-cards--circuit-name {
+    display: block !important;
+    font-size: 4vw;
+}
+
+.section__circuit-cards--circuit-text span {
+    color: rgba(255, 255, 255, .5);
+}
+
+.section__circuit-cards--circuit-text a {
+    width: 20vw;
+    height: auto;
+    font-size: 0.8vw;
+    text-align: justify;
+    white-space: wrap;
+    overflow: auto;
+    text-overflow: clip;
 }

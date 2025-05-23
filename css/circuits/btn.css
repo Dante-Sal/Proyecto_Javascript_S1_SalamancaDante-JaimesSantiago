@@ -6,12 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: clamp(.8vmax, calc((60px - 3vmax) * .5), 1vw) clamp(2.5vmax, calc((60px - 3vmax) * 1.563), 1.5vw);
+    padding: .8vw 2.5vw;
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: .2vw solid rgb(255, 255, 255);
-    border-radius: clamp(3.4vmax, calc((60px - 3vmax) * 2.125), calc((60px - 3vmax) * 2.125));
-    font-size: clamp(1.6vmax, calc(60px - 3vmax), 3vw);
+    border-radius: 3.4vw;
+    font-size: 1.6vw;
     font-family: 'Iceberg';
     transition: all .3s cubic-bezier(.23, 1, .320, 1);
     overflow: hidden;
@@ -23,8 +23,8 @@
     position: absolute;
     inset: 0;
     margin: auto;
-    width: clamp(4vmax, calc((60px - 3vmax) * 2.5), calc((60px - 3vmax) * 2.5));
-    height: clamp(4vmax, calc((60px - 3vmax) * 2.5), calc((60px - 3vmax) * 2.5));
+    width: 4vw;
+    height: 4vw;
     border-radius: inherit;
     scale: 0;
     z-index: -1;
